@@ -289,3 +289,31 @@ via-thread1 via-thread1-right .writing a {
   letter-spacing: 0.15px;
   color:rgb(var(--mgrgb1));
 }
+
+via-thread1 via-thread1-right written {
+  text-align:left;
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-start;
+  margin:10px 0;
+  padding:30px;
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  color:rgb(var(--mgrgb1));
+  border-top:1px solid var(--white-hex);
+}
+
+via-thread1 via-thread1-right written x {
+  font:20px var(--display);
+  text-transform:lowercase;
+  text-decoration: none;
+  color:var(--black-hex)!important;
+  margin-top:-10px;
+}
+
+via-thread1 via-thread1-right written x b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+}
