@@ -249,7 +249,7 @@ via-thread1 via-thread1-right tag a {
   font:20px var(--display);
   text-transform:lowercase;
   text-decoration: none;
-  color:var(--black-hex);
+  color:var(--black-hex)!important;
   margin-top:-10px;
 }
 
