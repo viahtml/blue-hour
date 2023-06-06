@@ -190,3 +190,104 @@ via-comm1 via-comm1-bottom type a {
   color:rgba(var(--mgrgb2),1);
   text-decoration: none;
 }
+
+
+/*********
+THREAD1
+*********/
+
+via-thread1 {
+  position:relative;
+  display:grid;
+  grid-template-columns: 100px auto;
+  margin:30px auto;
+  width:450px;
+  background-color: var(--white-hex);
+  background-image: radial-gradient(at 13% 8%, rgba(var(--mgrgb1),0.3) 0, transparent 73%), radial-gradient(at 28% 63%, rgba(var(--mgrgb2),0.2) 0, transparent 49%), radial-gradient(at 96% 62%, rgba(var(--mgrgb1),0.2) 0, transparent 99%), radial-gradient(at 20% 11%, var(--white-hex) 0, transparent 1%), radial-gradient(at 11% 32%, rgba(var(--mgrgb2),0.1) 0, transparent 11%), radial-gradient(at 57% 4%, rgba(var(--mgrgb2),0.4) 0, transparent 50%);
+  background-blend-mode: var(--blendmode);
+  font:500 13px var(--sans);
+  color:var(--black-hex);
+  border-radius:15px;
+  border:1px solid var(--white-hex);
+  overflow:hidden;
+}
+
+via-thread1 via-thread1-left {
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:20px;
+  background:rgba(var(--white2),0.2);
+  border-right:1px solid var(--white-hex);
+}
+
+via-thread1 via-thread1-left img {
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  border:1px solid var(--white-hex);
+}
+
+via-thread1 via-thread1-right {
+}
+
+via-thread1 via-thread1-right tag {
+  text-align:right;
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-end;
+  margin:10px 0;
+  padding:30px;
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  color:rgb(var(--mgrgb1));
+  border-bottom:1px solid var(--white-hex);
+}
+
+via-thread1 via-thread1-right tag a {
+  font:20px var(--display);
+  text-transform:lowercase;
+  text-decoration: none;
+  color:var(--black-hex);
+  margin-top:-10px;
+}
+
+via-thread1 via-thread1-right tag a b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+}
+
+via-thread1 via-thread1-right .writing {
+  position:relative;
+  display:block;
+  text-align:justify;
+  padding:30px;
+  line-height:160%;
+}
+
+via-thread1 via-thread1-right .writing b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 1p0x;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  padding:0 4px;
+}
+
+via-thread1 via-thread1-right .writing i {
+  color:rgb(var(--mgrgb2));
+}
+
+via-thread1 via-thread1-right .writing u {
+  font:20px var(--display);
+  text-decoration-color:rgb(var(--mgrgb3));
+}
+
+via-thread1 via-thread1-right .writing a {
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  letter-spacing: 0.15px;
+  color:rgb(var(--mgrgb1));
+}
