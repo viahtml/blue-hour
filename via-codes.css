@@ -229,9 +229,6 @@ via-thread1 via-thread1-left img {
   border:1px solid var(--white-hex);
 }
 
-via-thread1 via-thread1-right {
-}
-
 via-thread1 via-thread1-right tag {
   text-align:right;
   display:flex;
@@ -253,7 +250,7 @@ via-thread1 via-thread1-right tag a {
   margin-top:-10px;
 }
 
-via-thread1 via-thread1-right tag a b {
+via-thread1 via-thread1-right tag b a {
   background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
   background-size: 100% 100px;
   background-repeat: no-repeat;
@@ -270,7 +267,7 @@ via-thread1 via-thread1-right .writing {
 
 via-thread1 via-thread1-right .writing b {
   background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
-  background-size: 100% 1p0x;
+  background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: left 0.5rem;
   padding:0 4px;
@@ -281,7 +278,7 @@ via-thread1 via-thread1-right .writing i {
 }
 
 via-thread1 via-thread1-right .writing u {
-  font:20px var(--display);
+  font:15px var(--display);
   text-decoration-color:rgb(var(--mgrgb3));
 }
 
