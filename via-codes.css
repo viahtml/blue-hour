@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Work+Sans:wght@300;400;800&display=swap');
+
+html {
+
+  /*** FONTS ***/
+  --sans: 'Work Sans', sans-serif;
+  --display: 'Cherry Bomb One', cursive;
+
+  /*** COLORS ***/
+  --clear: rgba(255, 255, 255, 0);
+  --white: 255, 252, 252;
+  --white-hex: #fffcfc;
+  --white2: 247, 247, 247;
+  --white2-hex: #f7f7f7;
+  --white3: 240, 240, 240;
+  --white3-hex: #f0f0f0;
+  --gray: 221, 221, 221;
+  --gray-hex: #ddd;
+  --black: 40, 42, 42;
+  --black-hex: #282a2a;
+  --darken: 0%;
+  --blendmode: darken;
+}
+
+html img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+html[color-mode="dark"] {
+
+  /*** COLORS ***/
+  --clear: rgba(255, 255, 255, 0);
+  --white: 38, 38, 38;
+  --white-hex: #262626;
+  --white2: 86, 86, 86;
+  --white2-hex: #444;
+  --white3: 51, 51, 51;
+  --white3-hex: #333;
+  --gray: 74, 73, 73;
+  --gray-hex: #4a4949;
+  --black: 252, 252, 252;
+  --black-hex: #fffcfc;
+  --darken: -15%;
+  --blendmode: exclusion;
+}
+
+/*********
+COMM1
+*********/
+
+via-comm1 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px 450px 50px;
+  margin:30px auto;
+  width:300px;
+  background:var(--white2-hex);
+  color:var(--black-hex);
+  border-radius:15px;
+  font-family:var(--sans);
+  border:2px solid var(--white3-hex);
+  box-shadow: 0 0 10px 0 rgba(var(--white3),0.4);
+  overflow:hidden;
+}
+
+via-comm1 via-comm1-top {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background:linear-gradient(to right, rgba(var(--mgrgb1),0.2) 0%, rgba(var(--mgrgb2),0.2) 15%, rgba(var(--mgrgb3),0.2) 50%, rgba(var(--mgrgb2),0.2) 85%, rgba(var(--mgrgb1),0.2) 100%);
+  border-bottom:2px solid var(--white3-hex);
+}
+
+via-comm1 via-comm1-top comm1-top {
+  position:relative;
+}
+
+via-comm1 via-comm1-top comm1-top img {
+  width:50px;
+  height:50px;
+  border:2px solid var(--white3-hex);
+  border-radius:100%;
+}
+
+via-comm1 via-comm1-top comm1-top indicator {
+  position:absolute;
+  right:3px;
+  top:5px;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  background: rgb(var(--mgrgb1));
+}
+
+via-comm1 via-comm1-top contact-name {
+  font:25px var(--display);
+  color:var(--white-hex);
+}
+
+contact-name b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.8) 0%, rgba(var(--mgrgb2),0.8) 15%, rgba(var(--mgrgb3),0.8) 50%, rgba(var(--mgrgb2),0.8) 85%, rgba(var(--mgrgb1),0.8) 100%);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+}
+
+via-comm1 .msgs {
+  position:relative;
+  display:grid;
+  grid-template-rows:auto 50px auto;
+  align-items:start;
+  margin:20px;
+  font-size:13px;
+  overflow:auto;
+}
+
+via-comm1 .msgs x {
+  position:relative;
+  float:right;
+  text-align:right;
+  clear:both;
+  padding:20px;
+  background:var(--white-hex);
+  border-radius:15px;
+}
+
+via-comm1 .msgs x r {
+  position:absolute;
+  bottom:-15px;
+  right:10px;
+}
+
+via-comm1 .msgs x r img[src*="emojis"] {
+  width:15px;
+  background:rgba(var(--mgrgb1));
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+via-comm1 .msgs bar {
+  position:relative;
+  display:block;
+  background:var(--white-hex);
+  width:50px;
+  height:3px;
+  margin:30px auto;
+}
+
+via-comm1 .msgs .msgs-proper p {
+  float:left;
+  clear:both;
+  margin:3px 0;
+  padding:10px;
+  border-radius:10px;
+  background:rgba(var(--mgrgb3),0.7);
+}
+
+via-comm1 via-comm1-bottom {
+  position:relative;
+  display:block;
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.8) 0%, rgba(var(--mgrgb2),0.8) 15%, rgba(var(--mgrgb3),0.8) 50%, rgba(var(--mgrgb2),0.8) 85%, rgba(var(--mgrgb1),0.8) 100%);
+}
+
+via-comm1 via-comm1-bottom type {
+    position:relative;
+    display:flex;
+    flex-flow:row;
+    justify-content: start;
+    align-items: center;
+    background:var(--white-hex);
+    margin:10px 20px;
+    width:calc(100% - 60px);
+    height:30px;
+    border-radius:20px;
+    padding:0 10px;
+    font:800 10px var(--sans);
+    text-transform:uppercase;
+    color:rgba(var(--mgrgb1),1);
+    border-top:2px solid var(--white3-hex);
+}
+
+via-comm1 via-comm1-bottom type a {
+  margin-left:3px;
+  color:rgba(var(--mgrgb2),1);
+  text-decoration: none;
+}
