@@ -116,6 +116,7 @@ via-comm1 .msgs {
   align-items:start;
   margin:20px;
   font-size:13px;
+  padding-right:5px;
   overflow:auto;
 }
 
