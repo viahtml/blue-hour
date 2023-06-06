@@ -59,6 +59,7 @@ via-comm1 {
   color:var(--black-hex);
   border-radius:15px;
   font-family:var(--sans);
+  text-align:justify;
   border:2px solid var(--white3-hex);
   box-shadow: 0 0 10px 0 rgba(var(--white3),0.4);
   overflow:hidden;
