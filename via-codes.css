@@ -317,3 +317,122 @@ via-thread1 via-thread1-right written x b {
   background-repeat: no-repeat;
   background-position: left 1rem;
 }
+
+/*********
+THREAD1
+*********/
+
+via-thread2 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px auto;
+  margin:30px auto;
+  width:330px;
+  background-color: var(--white-hex);
+  background-image: radial-gradient(at 26% 80%, rgb(var(--white)) 0, transparent 75%), radial-gradient(at 74% 21%, rgb(var(--mgrgb1),0.3) 0, transparent 84%), radial-gradient(at 34% 31%, rgb(var(--mgrgb2),0.3) 0, transparent 66%), radial-gradient(at 81% 54%, rgb(var(--mgrgb3),0.3) 0, transparent 86%);
+  background-blend-mode: var(--blendmode);
+  font:500 13px var(--sans);
+  text-align:justify;
+  color:var(--black-hex);
+  border-radius:15px;
+  border:1px solid var(--white-hex);
+  overflow:hidden;
+}
+
+via-thread2 .wave {
+  position:absolute;
+  height:130px;
+}
+
+via-thread2 .wave1 {
+  position:absolute;
+  bottom:0;
+  height:130px;
+}
+
+via-thread2 via-thread2-top {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  z-index:2;
+}
+
+via-thread2 via-thread2-top img {
+  width:65px;
+  height:65px;
+  border-radius:10px;
+  margin:20px;
+  border:1px solid var(--white-hex);
+}
+
+via-thread2 via-thread2-top tag {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  margin:20px;
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
+
+via-thread2 .writing {
+  position:relative;
+  padding:50px;
+  z-index:2;
+}
+
+via-thread2 .writing b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  padding:0 4px;
+}
+
+via-thread2 .writing i {
+  color:rgb(var(--mgrgb2));
+}
+
+via-thread2 .writing u {
+  font:15px var(--display);
+  text-decoration-color:rgb(var(--mgrgb3));
+}
+
+via-thread2 .writing a {
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  letter-spacing: 0.15px;
+  color:rgb(var(--mgrgb1));
+}
+
+via-thread2 bar {
+  position:relative;
+  display:block;
+  margin:-30px auto 20px;
+  width:50px;
+  height:2px;
+  background:var(--white-hex);
+  border-radius:30px;
+  position:relative;
+}
+
+via-thread2 bar.top {
+  margin:20px auto -30px;
+}
+
+via-thread2 written {
+  position:relative;
+  z-index:2;
+  margin:0px auto 30px;
+  font:20px var(--display);
+}
+
+via-thread2 written b {
+ background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+ background-size: 100% 100px;
+ background-repeat: no-repeat;
+ background-position: left 1rem;
+ padding:0 4px;
+}
