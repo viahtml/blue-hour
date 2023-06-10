@@ -741,6 +741,9 @@ via-character1 {
   overflow:hidden;
 }
 
+via-character1 ::-webkit-scrollbar-thumb { height:auto; background:rgb(var(--mainColor));  border-radius:5px; }
+via-character1 ::-webkit-scrollbar { width:5px; height:5px; background:rgb(var(--backColor));}
+
 via-character1 via-character1-top {
   display:flex;
   flex-flow:row;
@@ -825,13 +828,16 @@ via-character1 via-character1-bottom {
   position:relative;
   display:grid;
   grid-template-rows: 50px auto;
+  grid-gap:20px;
 }
 
 via-character1 via-character1-bottom via-character1-bottom-code {
   padding:15px;
+  height:45px;
   background:rgba(var(--white),0.3);
   border-bottom:1px solid var(--white-hex);
   overflow-x:auto;
+  overflow-y: hidden;
 }
 
 via-character1 #CODE {
