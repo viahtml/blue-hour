@@ -833,11 +833,16 @@ via-character1 via-character1-bottom {
 
 via-character1 via-character1-bottom via-character1-bottom-code {
   padding:15px;
-  height:45px;
+  height:50px;
   background:rgba(var(--white),0.3);
   border-bottom:1px solid var(--white-hex);
   overflow-x:auto;
   overflow-y: hidden;
+}
+
+via-character1 via-character1-bottom via-character1-bottom-code ::-webkit-scrollbar-thumb,
+via-character1 via-character1-bottom via-character1-bottom-code ::-webkit-scrollbar {
+  display:none;
 }
 
 via-character1 #CODE {
@@ -864,7 +869,7 @@ via-character1 via-character1-bottom via-character1-bottom-tracker b {
 
 via-character1 via-character1-bottom via-character1-bottom-tracker overflow {
   display:block;
-  max-height:290px;
+  max-height:270px;
   padding-right:15px;
   overflow:auto;
   margin:20px 0;
