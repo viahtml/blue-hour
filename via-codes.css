@@ -910,3 +910,100 @@ via-character1 via-character1-bottom via-character1-bottom-tracker a.dev::before
   content:"\F4E1";
   font-family: 'Bootstrap-Icons';
 }
+
+/*********
+TRACKER1
+*********/
+
+via-tracker1 {
+  position:relative;
+  display:grid;
+  grid-template-rows: auto auto auto;
+  grid-gap:10px;
+  margin:30px auto;
+  width:350px;
+  padding:30px;
+  background-color: var(--white-hex);
+  background-image: radial-gradient(at 38% 92%, var(--white-hex) 0, transparent 68%), radial-gradient(at 3% 40%, rgba(var(--mgrgb1),0.1) 0, transparent 84%), radial-gradient(at 48% 22%, rgba(var(--mgrgb1),0) 0, transparent 66%), radial-gradient(at 44% 54%, rgba(var(--mgrgb2),0.1) 0, transparent 97%), radial-gradient(at 30% 15%, rgba(var(--mgrgb3),0) 0, transparent 5%), radial-gradient(at 84% 28%, rgba(var(--mgrgb3),0.1) 0, transparent 97%);
+  color:var(--black-hex);
+  border-radius:15px;
+  font: 13px var(--sans);
+  text-align:justify;
+  border:1px solid var(--white-hex);
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.25);
+  overflow:hidden;
+}
+
+via-tracker1 via-tracker1-top {
+  margin:0 auto;
+}
+
+via-tracker1 via-tracker1-top b {
+  font:25px var(--display);
+  font:800 25px var(--sans);
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+  padding:0 4px;
+}
+
+via-tracker1 .writing {
+  font:14px var(--sans);
+  line-height:160%;
+}
+
+via-tracker1 .writing b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  padding:0 4px;
+}
+
+via-tracker1 .writing i {
+  color:rgb(var(--mgrgb2));
+}
+
+via-tracker1 .writing u {
+  font:15px var(--display);
+  text-decoration-color:rgb(var(--mgrgb3));
+}
+
+via-tracker1 .writing a {
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  letter-spacing: 0.15px;
+  color:rgb(var(--mgrgb1));
+}
+
+via-tracker1 via-tracker1-tracking {
+  display:grid;
+  grid-gap:5px;
+  margin-top:10px;
+}
+
+via-tracker1 via-tracker1-tracking a {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background:rgba(var(--white),0.3);
+  font-weight:800;
+  text-transform: uppercase;
+  border:1px solid var(--white-hex);
+  border-radius:10px;
+}
+
+via-tracker1 via-tracker1-tracking a:nth-child(1n) {
+  color:rgb(var(--mgrgb3));
+}
+
+via-tracker1 via-tracker1-tracking a:nth-child(2n) {
+  color:rgb(var(--mgrgb2));
+}
+
+via-tracker1 via-tracker1-tracking a:nth-child(3n) {
+  color:rgb(var(--mgrgb1));
+}
