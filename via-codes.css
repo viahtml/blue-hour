@@ -1107,5 +1107,5 @@ via-thread4 tag {
   border-radius:15px;
   text-transform:uppercase;
   font:800 10px var(--sans);
-  color:var(rgb(var(--mgrgb2)))!important;
+  color:rgb(var(--mgrgb2))!important;
 }
