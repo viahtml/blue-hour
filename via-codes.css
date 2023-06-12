@@ -1007,3 +1007,105 @@ via-tracker1 via-tracker1-tracking a:nth-child(2n) {
 via-tracker1 via-tracker1-tracking a:nth-child(3n) {
   color:rgb(var(--mgrgb1));
 }
+
+
+/*********
+THREAD4
+*********/
+
+via-thread4 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 10px auto auto auto 10px;
+  margin:30px auto;
+  width:100%;
+  background-color: var(--white-hex);
+  font:500 14px var(--sans);
+  text-align:justify;
+  color:var(--black-hex);
+  border-radius:15px;
+  border:1px solid var(--white2-hex);
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.25);
+  overflow:hidden;
+}
+
+via-thread4 bar {
+  position:relative;
+  display:block;
+  width:100%;
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+}
+
+via-thread4 via-thread4-img {
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:50px;
+}
+
+via-thread4 via-thread4-img img {
+  border-radius:5px;
+  border:2px solid rgb(var(--mgrgb1));
+}
+
+via-thread4 via-thread4-img img.circle {
+  width:80px;
+  height:80px;
+  border-radius:100%;
+}
+
+via-thread4 via-thread4-img img.square {
+  width:80px;
+  height:80px;
+}
+
+via-thread4 via-thread4-img img.rectangle {
+  width:120px;
+}
+
+via-thread4 .writing {
+  padding:50px;
+  line-height:160%;
+}
+
+via-thread4 .writing b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  padding:0 4px;
+}
+
+via-thread4 .writing i {
+  color:rgb(var(--mgrgb2));
+}
+
+via-thread4 .writing u {
+  font:15px var(--display);
+  text-decoration-color:rgb(var(--mgrgb3));
+}
+
+via-thread4 .writing a {
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  letter-spacing: 0.15px;
+  color:rgb(var(--mgrgb1));
+}
+
+via-thread4 tag {
+  align-self: start;
+  justify-self:start;
+  margin:40px;
+  padding:30px;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  padding:5px 25px;
+  background:var(--white3-hex);
+  border-radius:15px;
+  text-transform:uppercase;
+  font:800 10px var(--sans);
+  color:var(rgb(var(--mgrgb2)))!important;
+}
