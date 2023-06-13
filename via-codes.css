@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;500;600;700&family=Space+Mono:ital@0;1&display=swap');
+
 
 html {
 
   /*** FONTS ***/
   --sans: 'Quicksand', sans-serif;
   --display: 'Cherry Bomb One', cursive;
+  --mono: 'Space Mono', monospace;
 
   /*** COLORS ***/
   --clear: rgba(255, 255, 255, 0);
@@ -1108,4 +1110,179 @@ via-thread4 tag {
   text-transform:uppercase;
   font:800 10px var(--sans);
   color:rgb(var(--mgrgb2))!important;
+}
+
+/*********
+CHARACTER2
+*********/
+
+via-character2 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px auto 50px 450px;
+  margin:30px auto;
+  width:650px;
+  background-color: var(--white-hex);
+  background-image: radial-gradient(at 100% 16%, rgba(var(--mgrgb1),0.3) 0, transparent 40%), radial-gradient(at 0% 21%, rgba(var(--mgrgb2),0.3) 0, transparent 63%), radial-gradient(at 55% 0%, rgba(var(--mgrgb3),0.3) 0, transparent 36%);
+  color:var(--black-hex);
+  border-radius:15px;
+  font: 13px var(--sans);
+  text-align:justify;
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
+  overflow:hidden;
+}
+
+via-character2 via-character2-top {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+  border-bottom:1px solid var(--white-hex);
+}
+
+via-character2 via-character2-top b {
+  font:800 25px var(--sans);
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 15px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+  padding:0 4px;
+}
+
+via-character2 via-character2-top img {
+  width:60px;
+  height:60px;
+  border-radius:5px;
+  box-shadow: 0 0 30px 10px rgba(var(--white),0.75);
+}
+
+via-character2 via-character2-body {
+  position:relative;
+  display:grid;
+  grid-template-rows:auto auto;
+  border-bottom:1px solid var(--white-hex);
+}
+
+via-character2 via-character2-body via-character2-body-top {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+}
+
+via-character2 via-character2-body via-character2-body-top img {
+  width:150px;
+  height:150px;
+  border-radius:10px;
+  box-shadow: 0 0 30px 10px rgba(var(--white),0.75);
+}
+
+via-character2 via-character2-body via-character2-body-bottom {
+  padding:20px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+via-character2 via-character2-body via-character2-body-bottom x.four {
+  grid-column:span 4;
+}
+
+via-character2 via-character2-body via-character2-body-bottom x.two {
+  grid-column:span 2;
+}
+
+via-character2 via-character2-body via-character2-body-bottom x {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  background:rgba(var(--white),0.3);
+  text-transform:uppercase;
+  padding:20px;
+  border-radius:5px;
+}
+
+via-character2 via-character2-body via-character2-body-bottom x b {
+  color:rgb(var(--mgrgb2));
+}
+
+via-character2 via-character2-code {
+  padding:15px;
+  height:50px;
+  background:rgba(var(--white),0.5);
+  border-bottom:1px solid var(--white-hex);
+  overflow-x:auto;
+  overflow-y: hidden;
+}
+
+via-character2 #CODE {
+  all:unset;
+  letter-spacing: 1px;
+  white-space:pre;
+  word-break: break-all;
+  font-size:14px;
+  font-family:var(--mono);
+}
+
+
+via-character2 via-character2-tracker {
+  padding:50px 30px;
+}
+
+via-character2 via-character2-tracker b {
+  font:800 25px var(--sans);
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 15px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+  padding:0 4px;
+}
+
+via-character2 via-character2-tracker overflow {
+  display:block;
+  max-height:300px;
+  padding-right:15px;
+  overflow:auto;
+  margin:20px 0;
+}
+
+via-character2 via-character2-tracker a {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  margin:5px 0;
+  padding:20px;
+  text-transform: uppercase;
+  font-weight:800;
+  border-radius:5px;
+}
+
+via-character2 via-character2-tracker a:nth-child(odd) {
+  background:rgba(var(--mgrgb3),0.2);
+  color:rgb(var(--mgrgb3));
+}
+
+via-character2 via-character2-tracker a:nth-child(even) {
+  color:rgb(var(--mgrgb2));
+  background:rgba(var(--mgrgb2),0.2);
+}
+
+via-character2 via-character2-tracker a.thread::before {
+  content:"\F4CB";
+  font-family: 'Bootstrap-Icons';
+}
+
+via-character2 via-character2-tracker a.comm::before {
+  content:"\F4E7";
+  font-family: 'Bootstrap-Icons';
+}
+
+via-character2 via-character2-tracker a.dev::before {
+  content:"\F4E1";
+  font-family: 'Bootstrap-Icons';
 }
