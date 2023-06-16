@@ -1286,3 +1286,154 @@ via-character2 via-character2-tracker a.dev::before {
   content:"\F4E1";
   font-family: 'Bootstrap-Icons';
 }
+
+/*********
+CHARACTER2
+*********/
+
+via-comm3 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px 150px auto 70px;
+  margin:30px auto;
+  width:400px;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(rgb(var(--mgrgb1),0.2), rgb(var(--mgrgb2),0.2), rgb(var(--mgrgb3),0.2), var(--white-hex) 40%);
+  color:var(--black-hex);
+  border-radius:25px;
+  font: 13px var(--sans);
+  text-align:justify;
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
+  overflow:hidden;
+}
+
+via-comm3 via-comm3-top {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:20px;
+}
+
+via-comm3 via-comm3-top i {
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  background:var(--white-hex);
+  color:rgba(var(--mgrgb1));
+  width:30px;
+  height:30px;
+  padding:10px;
+  border-radius:5px;
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
+}
+
+via-comm3 via-comm3-image {
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: flex-end;
+  padding:0px 50px 50px;
+  border-bottom:1px solid var(--white3-hex);
+}
+
+via-comm3 via-comm3-image img {
+  width:60px;
+  height:60px;
+  margin-bottom:10px;
+  border-radius:10px;
+  border:5px solid var(--white-hex);
+}
+
+via-comm3 via-comm3-image name {
+  font:800 25px var(--sans);
+  color:rgb(var(--mgrgb2));
+}
+
+via-comm3 .msgs {
+  position:relative;
+  display:grid;
+  grid-template-rows:auto 50px auto;
+  align-items:start;
+  align-content: start;
+  margin:30px;
+  font-size:13px;
+  padding-right:10px;
+  max-height:450px;
+  overflow:auto;
+}
+
+via-comm3 .msgs x {
+  position:relative;
+  float:left;
+  text-align:left;
+  clear:both;
+  padding:20px;
+  background:rgba(var(--mgrgb1),0.4);
+  border:1px solid rgba(var(--mgrgb1),0.5);
+  border-radius:15px;
+}
+
+via-comm3 .msgs x r {
+  position:absolute;
+  bottom:-15px;
+  left:10px;
+}
+
+via-comm3 .msgs x r img[src*="emojis"] {
+  width:15px;
+  background:rgba(var(--mgrgb1),1);
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+via-comm3 .msgs bar {
+  position:relative;
+  display:block;
+  background:rgba(var(--mgrgb3),1);
+  width:50px;
+  height:3px;
+  margin:30px auto;
+  border-radius:20px;
+}
+
+via-comm3 .msgs .msgs-proper p {
+  float: right;
+  clear:both;
+  text-align: right;
+  margin:3px 0;
+  padding:15px;
+  background:rgba(var(--mgrgb2),0.4);
+  color:var(--black-hex);
+  font:500 14px var(--sans);
+  border-radius:10px;
+  border:1px solid rgba(var(--mgrgb2),0.5);
+}
+
+via-comm3 type {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:30px;
+  border-top:1px solid rgb(var(--white3));
+}
+
+via-comm3 type send {
+  background:rgba(var(--white3),1);
+  padding:15px;
+  border-radius:10px;
+  width:80%;
+  font:800 10px var(--sans);
+  text-transform:uppercase;
+}
+
+via-comm3 type i {
+  color:rgba(var(--mgrgb3),1);
+  margin:10px;
+  font-size:20px;
+}
