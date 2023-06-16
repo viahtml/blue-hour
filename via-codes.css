@@ -1297,7 +1297,7 @@ via-comm3 {
   grid-template-rows: 100px 150px auto 70px;
   margin:30px auto;
   width:400px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-hex);
   background-image: linear-gradient(rgb(var(--mgrgb1),0.2), rgb(var(--mgrgb2),0.2), rgb(var(--mgrgb3),0.2), var(--white-hex) 40%);
   color:var(--black-hex);
   border-radius:25px;
