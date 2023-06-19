@@ -1343,6 +1343,7 @@ via-comm3 via-comm3-image {
 via-comm3 via-comm3-image img {
   width:60px;
   height:60px;
+  aspect-ratio: 1 / 1;
   border-radius:10px;
   border:5px solid var(--white-hex);
 }
