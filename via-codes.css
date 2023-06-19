@@ -1343,12 +1343,12 @@ via-comm3 via-comm3-image {
 via-comm3 via-comm3-image img {
   width:60px;
   height:60px;
-  margin-bottom:10px;
   border-radius:10px;
   border:5px solid var(--white-hex);
 }
 
 via-comm3 via-comm3-image name {
+  margin-top:10px;
   font:800 25px var(--sans);
   color:rgb(var(--mgrgb2));
 }
