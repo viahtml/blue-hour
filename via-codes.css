@@ -1288,7 +1288,7 @@ via-character2 via-character2-tracker a.dev::before {
 }
 
 /*********
-CHARACTER2
+COMM3
 *********/
 
 via-comm3 {
@@ -1437,4 +1437,189 @@ via-comm3 type i {
   color:rgba(var(--mgrgb3),1);
   margin:10px;
   font-size:20px;
+}
+
+/*********
+GENERAL1
+*********/
+
+via-general1 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px auto auto;
+  margin:30px auto;
+  width:600px;
+  background-color: var(--white-hex);
+  background-image: linear-gradient(to top, rgb(var(--mgrgb1),0.2), rgb(var(--mgrgb2),0.2), rgb(var(--mgrgb3),0.2), var(--white-hex) 40%);
+  color:var(--black-hex);
+  border-radius:10px;
+  font: 13px var(--sans);
+  text-align:justify;
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
+  overflow:hidden;
+}
+
+via-general1 via-general1-top {
+  position:relative;
+  padding:30px;
+  font:800 30px var(--sans);
+  background:var(--white2-hex);
+}
+
+via-general1 via-general1-top b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 15px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+  padding:0 4px;
+}
+
+via-general1 via-general1-top::after {
+  content: '';
+  position:absolute;
+  top:100px;
+  left:0;
+  width:100%;
+  height:5px;
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+}
+
+via-general1 .writing {
+  padding:30px;
+  font:500 14px var(--sans);
+  line-height:160%;
+}
+
+via-general1 .writing h1,
+via-general1 .writing h2,
+via-general1 .writing h3,
+via-general1 .writing h4,
+via-general1 .writing h5,
+via-general1 .writing h6 {
+  position:relative;
+  display:block;
+  margin:3px 0;
+}
+
+via-general1 .writing h1 span,
+via-general1 .writing h2 span,
+via-general1 .writing h3 span,
+via-general1 .writing h4 span,
+via-general1 .writing h5 span,
+via-general1 .writing h6 span {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-general1 .writing quote-type {
+  position:relative;
+  display:block;
+  margin-top:40px;
+  padding:20px;
+  background:var(--white3-hex);
+  font:600 17px var(--sans);
+  color:rgb(var(--mgrgb1));
+  border-radius:10px;
+  box-shadow:0 0 5px 0 rgba(var(--gray),0.5);
+}
+
+via-general1 .writing quote-type::before {
+  content: '❝ ';
+  font-size:35px;
+  color:var(--black-hex);
+}
+
+via-general1 .writing quote-type::first-letter {
+  font-size:35px;
+  color:var(--black-hex);
+}
+
+via-general1 .writing blockquote {
+  position:relative;
+  display:block;
+  margin:0px 0;
+  padding:30px;
+  background:var(--white3-hex);
+  font:500 14px var(--sans);
+  border-radius:10px;
+  box-shadow:0 0 5px 0 rgba(var(--gray),0.25);
+}
+
+via-general1 .writing span-type {
+  position:relative;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin:5px 0;
+}
+
+via-general1 .writing span-type span {
+  flex-grow:1;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  padding:5px 10px;
+  margin:3px;
+  background:var(--white3-hex);
+  text-align:center;
+  border-radius:7px;
+  box-shadow:0 0 5px 0 rgba(var(--gray),0.25);
+}
+
+via-general1 .writing span-type span b {
+  margin:0 10px 0 0;
+}
+
+via-general1 .writing span-type span:nth-child(odd) b {
+  color:rgb(var(--mgrgb2));
+  background:none;
+}
+
+via-general1 .writing span-type span:nth-child(even) b {
+  color:rgb(var(--mgrgb3));
+  background:none;
+}
+
+via-general1 .code-part {
+  position:relative;
+  padding:50px;
+  font:500 14px var(--sans);
+  line-height:160%;
+}
+
+via-general1 .code-part::before {
+  content: '';
+  position:absolute;
+  top:0px;
+  left:0;
+  width:100%;
+  height:5px;
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+}
+
+via-general1 .writing b {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.5) 0%, rgba(var(--mgrgb2),0.5) 15%, rgba(var(--mgrgb3),0.5) 50%, rgba(var(--mgrgb2),0.5) 85%, rgba(var(--mgrgb1),0.5) 100%);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: left 0.5rem;
+  padding:0 4px;
+}
+
+via-general1 .writing i {
+  color:rgb(var(--mgrgb2));
+}
+
+via-general1 .writing u {
+  font:800 15px var(--sans);
+  text-decoration-color:rgb(var(--mgrgb3));
+}
+
+via-general1 .writing a {
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+  letter-spacing: 0.15px;
+  color:rgb(var(--mgrgb1));
 }
