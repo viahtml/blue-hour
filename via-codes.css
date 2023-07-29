@@ -1623,3 +1623,239 @@ via-general1 .writing a {
   letter-spacing: 0.15px;
   color:rgb(var(--mgrgb1));
 }
+
+/*********
+THREAD5
+*********/
+
+via-thread5 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 100px auto 10px;
+  margin:30px auto;
+  width:400px;
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+  background:var(--white2-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+}
+
+via-thread5 divider {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background:var(--lightGradientTR);
+}
+
+via-thread5 divider grp-icon {
+  position: relative; 
+  display: block; 
+  width:30px;
+  height:30px;
+  box-sizing: border-box;
+  background: var(--icon); 
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+via-thread5 divider divider-link a {
+  font:800 11px var(--sans);
+  color:rgb(var(--mgrgb1));
+  text-decoration:none;
+  background:var(--white-hex);
+  padding:3px 20px;
+  border-radius:20px;
+  border:1px solid var(--black-hex);
+}
+
+via-thread5 divider img {
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  border:1px solid var(--black-hex);
+}
+
+via-thread5 .writing {
+  position: relative;
+  padding:50px;
+  border-top:1px solid var(--black-hex);
+  border-bottom:1px solid var(--black-hex);
+}
+
+via-thread5 .writing b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-thread5 .writing i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-thread5 .writing u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-thread5 .writing a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
+
+via-thread5.alternate {
+  position:relative;
+  display:grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+  margin:30px auto;
+  width:450px;
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+  background:var(--white2-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+}
+
+via-thread5.alternate divider {
+  display:flex;
+  flex-flow:column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  background:var(--lightGradientTR);
+}
+
+via-thread5.alternate divider divider-link a {
+  writing-mode: tb-rl;
+  padding:20px 3px;
+  transform: rotate(180deg);
+}
+
+via-thread5.alternate .writing {
+  position: relative;
+  padding:50px;
+  border-left:1px solid var(--black-hex);
+  border-top:none!important;
+  border-bottom:none!important;
+}
+
+/*********
+THREAD6
+*********/
+
+via-thread6 {
+  position: relative;
+  display:grid;
+  grid-template-areas:
+    "thread-image tag"
+    "thread-image char-names"
+    "thread-image writing";
+  grid-template-rows: 50px 50px 400px;
+  grid-template-columns: 220px 350px;
+  grid-row-gap: 10px;
+  column-gap: 15px;
+  width: calc(220px + 350px + 10px);
+  margin:30px auto;
+  border-radius:10px;
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+}
+
+via-thread6 thread-image img {
+  grid-area:thread-image;
+  width:220px;
+  height:520px;
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+  box-shadow: 5px 5px rgb(var(--mgrgb2),1);
+}
+
+via-thread6 tag {
+  grid-area: tag;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  padding:10px;
+  background-color: rgb(var(--mgrgb1),0.3);
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+  box-shadow: 5px 5px rgb(var(--mgrgb1),1);
+}
+
+via-thread6 tag a {
+  font:800 13px var(--sans);
+  color:rgb(var(--mgrgb1));
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+via-thread6 char-names {
+  grid-area: char-names;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px;
+  font:800 13px var(--sans);
+  color:rgb(var(--mgrgb3));
+  text-decoration:none;
+  text-transform: uppercase;
+  background-color: rgb(var(--mgrgb3),0.3);
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+  box-shadow: 5px 5px rgb(var(--mgrgb3),1);
+}
+
+via-thread6 .writing {
+  grid-area: writing;
+  padding:30px;
+  background:var(--white2-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+  box-shadow: 5px 5px rgb(var(--mgrgb2),1);
+}
+
+via-thread6 .writing overflow {
+  display:block;
+  padding-right:10px;
+  max-height:350px;
+  overflow:auto;
+}
+
+
+via-thread6 .writing b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-thread6 .writing i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-thread6 .writing u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-thread6 .writing a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
