@@ -1921,6 +1921,8 @@ via-thread7 thread-img {
 via-thread7 thread-img img {
   display:block;
   margin:40px;
+  width:80px;
+  height:80px;
   border-radius:7px;
   border:1px solid var(--black-hex);
 }
