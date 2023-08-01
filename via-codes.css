@@ -1998,3 +1998,161 @@ via-thread7 .writing a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+/*********
+DEVELOPMENT1
+*********/
+
+via-dev1 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "dev-title"
+    "dev-body"
+    "dev-note";
+  grid-template-rows: auto auto;
+  margin: 30px auto;
+  width:500px;
+  background:var(--white2-hex);
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+  border:1px solid var(--black-hex);
+  border-radius: 10px;
+  overflow:hidden;
+}
+
+via-dev1 dev-title {
+  grid-area: dev-title;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  align-items: flex-end;
+}
+
+via-dev1 dev-title line {
+  padding:30px;
+  font:800 20px var(--sans);
+}
+
+via-dev1 dev-title name {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgb(var(--mgrgb2));
+}
+
+via-dev1 dev-title scr {
+  grid-area:dev-title;
+  position:absolute; 
+  width:100%;
+  height:300px;
+  background-image: linear-gradient(to bottom, rgb(var(--mgrgb1),0.2), rgb(var(--mgrgb2),0.2), rgb(var(--mgrgb3),0.2), var(--white2-hex) 40%);
+}
+
+via-dev1 dev-content {
+  position:relative;
+  display:block;
+  padding:30px;
+}
+
+via-dev1 dev-content dev-content-images {
+  position:relative;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:10px;
+}
+
+via-dev1 dev-content dev-content-images img {
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+}
+
+via-dev1 dev-content dev-content-images img.one {
+  width:100%;
+}
+
+via-dev1 dev-content dev-content-images img.two {
+  width:calc(50% - 10px);
+}
+
+via-dev1 dev-content dev-content-images img.three {
+  width:calc(35.5% - 20px);
+}
+
+via-dev1 dev-content ul {
+  position:relative;
+  margin-left:-30px;
+}
+
+via-dev1 dev-content li {
+  list-style-type: none;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 0;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+}
+
+via-dev1 dev-content li span {
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align:right;
+  line-height:100%;
+}
+
+via-dev1 dev-content li:nth-child(1n) {
+  background:rgba(var(--mgrgb1),0.3);
+}
+
+via-dev1 dev-content li:nth-child(2n) {
+  background:rgba(var(--mgrgb2),0.3);
+}
+
+via-dev1 dev-content li:nth-child(3n) {
+  background:rgba(var(--mgrgb3),0.3);
+}
+
+via-dev1 dev-content li img[src*="emojis"] {
+  width:30px;
+  height:30px;
+  border-radius:0;
+  border:none;
+}
+
+via-dev1 dev-content li img {
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  border:1px solid var(--black-hex);
+}
+
+via-dev1 dev-content b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-dev1 dev-content i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-dev1 dev-content u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-dev1 dev-content a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
