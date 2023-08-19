@@ -2265,3 +2265,53 @@ via-thread8 .writing a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+via-thread8.alternate {
+  position:relative;
+  display:grid;
+  grid-template-areas: 
+    "topbar"
+    "thread-img"
+    "writing";
+  grid-template-rows: 30px 150px auto;
+  grid-template-columns: none!important;
+  margin:30px auto;
+  width:350px;
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+  background:var(--lightGradientTR);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+via-thread8.alternate thread-img img {
+  width:100%;
+  height:150px;
+  border-right:0!important;
+  border-bottom:1px solid var(--black-hex);
+}
+
+via-thread8.alternate thread-img tag {
+  position:absolute;
+  right:30px;
+  top:135px;
+  background:rgb(var(--mgrgb1),1);
+  font:800 11px var(--sans);
+  text-transform: uppercase;
+  padding:5px 15px;
+  border:1px solid var(--black-hex);
+  border-radius:5px;
+}
+
+via-thread8.alternate .writing {
+  grid-area:writing;
+  margin:30px;
+  padding:30px;
+  background:var(--white-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+  overflow:hidden;
+}
