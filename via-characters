@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+html {
+    /*** FONTS ***/
+    --sans: 'Quicksand', sans-serif;
+    --display: 'Cherry Bomb One', cursive;
+    --mono: 'Space Mono', monospace;
+  
+    /*** COLORS ***/
+    --clear: rgba(255, 255, 255, 0);
+    --white: 255, 252, 252;
+    --white-hex: #fffcfc;
+    --white2: 247, 247, 247;
+    --white2-hex: #f7f7f7;
+    --white3: 240, 240, 240;
+    --white3-hex: #f0f0f0;
+    --gray: 221, 221, 221;
+    --gray-hex: #ddd;
+    --black: 40, 42, 42;
+    --black-hex: #282a2a;
+    --darken: 0%;
+    --blendmode: darken;
+}
+  
+html img {
+    object-fit: cover;
+    object-position: center center;
+}
+  
+html[color-mode="dark"] {
+  
+    /*** COLORS ***/
+    --clear: rgba(255, 255, 255, 0);
+    --white: 38, 38, 38;
+    --white-hex: #262626;
+    --white2: 86, 86, 86;
+    --white2-hex: #444;
+    --white3: 51, 51, 51;
+    --white3-hex: #333;
+    --gray: 74, 73, 73;
+    --gray-hex: #4a4949;
+    --black: 252, 252, 252;
+    --black-hex: #fffcfc;
+    --darken: -15%;
+    --blendmode: exclusion;
+}
+
+/*********
+MAIN
+**********/
+
+via-main {
+    position:relative;
+    display:grid;
+    grid-template-rows: 30px auto;
+    background: var(--white-hex);
+    margin:30px auto;
+    width:100%;
+    line-height:160%;
+    color:var(--black-hex);
+    font-family:var(--sans);
+    text-align:justify;
+    border:1px solid var(--black-hex);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+via-main topbar {
+    background:var(--lightGradientTR);
+    display:flex;
+    flex-flow:row;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    border-bottom:1px solid var(--black-hex);
+}
+
+via-main topbar i {
+    background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-main .content {
+    padding:30px;
+}
+
+via-main .content h1 span {
+    background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-main .content b {
+    background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(var(--white),0);
+}
+  
+via-main .content i {
+    color:rgba(var(--mgrgb3));
+}
+  
+via-main .content u {
+    color:var(--black-hex);
+    text-decoration-color: rgb(var(--mgrgb1));
+    text-decoration-style: dashed;
+}
+  
+via-main .content a {
+    color:rgba(var(--mgrgb2));
+    font-family:var(--sans);
+    font:800 11px var(--sans);
+    text-transform:uppercase;
+}
+
+via-main .content .partner-legend {
+    position:relative;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    border-radius:5px;
+}
+
+via-main .content .partner-legend x {
+    min-width: calc(47% - 50px);
+    padding:15px 30px;
+    border-radius:5px;
+    border:1px solid var(--black-hex);
+    font:800 13px var(--sans);
+    text-transform:uppercase;
+}
+
+via-main .content .partner-legend x.allie {
+    background: rgb(255,210,210);
+    background: linear-gradient(90deg, rgba(255,210,210,1) 0%, rgba(203,226,255,1) 100%);
+}
+
+via-main .content .partner-legend x.coco {
+    background: rgb(255,254,200);
+    background: linear-gradient(90deg, rgba(255,254,200,1) 0%, rgba(247,212,255,1) 100%);
+}
+
+via-main .content .partner-legend x.jae {
+    background: rgb(255,219,212);
+    background: linear-gradient(90deg, rgba(255,219,212,1) 0%, rgba(255,145,184,1) 100%);
+}
+
+via-main .content .partner-legend x.kiki {
+    background: rgb(204,215,242);
+    background: linear-gradient(90deg, rgba(204,215,242,1) 0%, rgba(91,151,182,1) 100%);
+}
+
+via-main .content .partner-legend x.liv {
+    background: rgb(244,209,201);
+    background: linear-gradient(90deg, rgba(244,209,201,1) 0%, rgba(139,181,195,1) 100%);
+}
+
+via-main .content .partner-legend x.meep {
+    background: rgb(234,153,153);
+    background: linear-gradient(90deg, rgba(234,153,153,1) 0%, rgba(165,146,221,1) 100%);
+}
+
+via-main .content .character-gallery {
+    display:grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap:7px;
+}
+
+via-main .content .character-gallery character {
+    position:relative;
+    width:200px;
+    height:300px;
+    border-radius:5px;
+    border:1px solid var(--black-hex);
+    overflow:hidden;
+}
+
+via-main .content .character-gallery character character-hover {
+    position:absolute;
+    bottom:0;
+    padding:20px 30px;
+    height:40px;
+    width:calc(100% - 60px);
+    border-top:1px solid var(--black-hex);
+    transition:0.3s ease;
+}
+
+via-main .content .character-gallery character character-hover name {
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height:100%;
+}  
+
+via-main .content .character-gallery character character-hover name b {
+    font: 800 20px var(--sans);
+    text-transform: lowercase;
+}
+
+via-main .content .character-gallery character character-hover name b {
+    background: var(--black-hex);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-main .content .character-gallery character character-hover name i {
+    font: 800 13px var(--sans);
+    text-transform: uppercase;
+    color:var(--black-hex);
+}
+
+via-main .content .character-gallery character:hover character-hover {
+    height:calc(100% - 40px);
+    transition:0.3s ease;
+}
+
+via-main .content .character-gallery character character-hover character-hover-content {
+    display:none;
+}
+
+via-main .content .character-gallery character:hover character-hover character-hover-content {
+    display:block;
+    margin:30px -30px 30px;
+    padding:20px 30px;
+    border-top:1px solid var(--black-hex);
+}
+
+via-main .content .character-gallery character:hover character-hover character-hover-content character-info {
+    font:400 13px var(--sans);
+    text-transform:uppercase;
+}
+
+via-main .content .character-gallery character:hover character-hover character-hover-content character-info i {
+    display:block;
+    color:var(--black-hex);
+}
+
+/*********
+CHARACTER HOVER COLOR
+*********/
+
+via-main .content .character-gallery character.allie character-hover {
+    background: var(--white-hex);
+    background: linear-gradient(200deg, rgba(255,210,210,1) 0%, rgba(203,226,255,1) 100%);
+}
+
+via-main .content .character-gallery character.coco character-hover {
+    background: rgb(255,254,200);
+    background: linear-gradient(90deg, rgba(255,254,200,1) 0%, rgba(247,212,255,1) 100%);
+}
+
+via-main .content .character-gallery character.jae character-hover {
+    background: rgb(255,219,212);
+    background: linear-gradient(90deg, rgba(255,219,212,1) 0%, rgba(255,145,184,1) 100%);
+}
+
+via-main .content .character-gallery character.kiki character-hover {
+    background: rgb(204,215,242);
+    background: linear-gradient(90deg, rgba(204,215,242,1) 0%, rgba(91,151,182,1) 100%);
+}
+
+via-main .content .character-gallery character.liv character-hover {
+    background: rgb(244,209,201);
+    background: linear-gradient(90deg, rgba(244,209,201,1) 0%, rgba(139,181,195,1) 100%);
+}
+
+via-main .content .character-gallery character.meep character-hover {
+    background: rgb(234,153,153);
+    background: linear-gradient(90deg, rgba(234,153,153,1) 0%, rgba(165,146,221,1) 100%);
+}
