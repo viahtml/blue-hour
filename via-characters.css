@@ -165,13 +165,12 @@ via-main .content .partner-legend x.meep {
 
 via-main .content .character-gallery {
     display:grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 24.4%);
     grid-gap:7px;
 }
 
 via-main .content .character-gallery character {
     position:relative;
-    width:200px;
     height:300px;
     border-radius:5px;
     border:1px solid var(--black-hex);
