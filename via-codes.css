@@ -2315,3 +2315,221 @@ via-thread8.alternate .writing {
   border-radius:10px;
   overflow:hidden;
 }
+
+/********
+SOCIALS-1
+********/
+
+via-socials1 {
+  position:relative;
+  display:grid;
+  grid-template-areas: 
+    "header"
+    "buttons"
+    "feed";
+  grid-template-rows: 70px 80px auto;
+  margin:30px auto;
+  width:600px;
+  line-height:160%;
+  color:var(--black-hex);
+  font-family:var(--sans);
+  text-align:justify;
+  background:var(--white2-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+via-socials1 via-socials1-header {
+  grid-area:header;
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-evenly;
+  align-items: center;
+  background:var(--lightGradientTR);
+  border-bottom:1px solid var(--black-hex);
+}
+
+via-socials1 via-socials1-header img {
+  position:absolute;
+  left:30px;
+  bottom:-50px;
+  width:90px;
+  height:90px;
+  border:1px solid var(--black-hex);
+  border-radius:100%;
+}
+
+via-socials1 via-socials1-header header-details {
+  position:absolute;
+  right:30px;
+  bottom:-35px;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;;
+  padding:15px 50px;
+  background:var(--white-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+}
+
+via-socials1 via-socials1-header header-details x {
+  font:800 15px var(--sans);
+  text-transform: uppercase;
+  color:rgb(var(--mgrgb1));
+}
+via-socials1 via-socials1-header header-details x {
+  font:800 15px var(--sans);
+  text-transform: uppercase;
+  color:rgb(var(--mgrgb1));
+}
+via-socials1 via-socials1-header header-details y {
+  font:400 12px var(--sans);
+  text-transform: lowercase;
+}
+
+via-socials1 via-socials1-buttons {
+  grid-area:buttons;
+  position: relative;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-around;
+  align-items: center;
+  gap:10px;
+  padding:30px;
+  margin-top:50px;
+}
+
+via-socials1 via-socials1-buttons x {
+  flex-grow:1;
+  text-align:center;
+  padding:5px;
+  background:rgb(var(--mgrgb1),0.2);
+  color:rgb(var(--mgrgb1));
+  font:800 13px var(--sans);
+  text-transform: uppercase;;
+  border-radius:5px;
+}
+
+via-socials1 via-socials1-buttons x.follow {
+  background:rgb(var(--mgrgb1));
+  color:var(--white-hex);
+  text-transform: uppercase;
+}
+
+via-socials1 via-socials1-feed {
+  grid-area: feed;
+  position:relative;
+  display:grid;
+  grid-template-columns: repeat(3, calc((600px - 40px - 60px)/3));
+  grid-gap:20px;
+  padding:30px;
+}
+
+via-socials1 via-socials1-feed img {
+  width:100%;
+  height:170px;
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+}
+
+via-socials1.post {
+  position:relative;
+  display:grid;
+  grid-template-areas: 
+    "header"
+    "buttons"
+    "photo"
+    "caption";
+  grid-template-rows: 70px 80px auto auto;
+  grid-gap:10px;
+}
+
+via-socials1.post via-socials1-header {
+  grid-area:header;
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-evenly;
+  align-items: center;
+  background:var(--lightGradientTR);
+  border-bottom:1px solid var(--black-hex);
+}
+
+via-socials1.post via-socials1-header img {
+  position:absolute;
+  left:30px;
+  bottom:-50px;
+  width:90px;
+  height:90px;
+  border:1px solid var(--black-hex);
+  border-radius:100%;
+}
+
+via-socials1.post via-socials1-header header-details {
+  position:absolute;
+  right:30px;
+  bottom:-35px;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  padding:15px 50px;
+  background:var(--white-hex);
+  border:1px solid var(--black-hex);
+  border-radius:10px;
+}
+
+via-socials1.post via-socials1-buttons { 
+  margin-top:40px;
+}
+
+via-socials1.post via-socials1-photo {
+  grid-area:photo;
+  position:relative;
+  display:block;
+  margin:30px auto 30px;
+}
+
+via-socials1.post via-socials1-photo img {
+  width:530px;
+  height:530px;
+  border-radius:10px;
+  border:1px solid var(--black-hex);
+}
+
+via-socials1.post .caption {
+  margin:15px 30px 30px;
+  padding:20px;
+  background:var(--lightGradientTR);
+  border-radius:10px;
+}
+
+via-socials1.post via-socials1-photo ~ .caption {
+  margin-top:-20px;
+}
+
+via-socials1.post .caption b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-socials1.post .caption i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-socials1.post .caption u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-socials1.post .caption a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
