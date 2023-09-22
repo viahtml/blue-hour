@@ -2533,3 +2533,95 @@ via-socials1.post .caption a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+/*********
+THREAD9
+*********/
+
+via-thread9 {
+  position:relative;
+  display: grid;
+  grid-template-areas: 
+    "image"
+    "tag"
+    "writing";
+  grid-template-rows: auto auto auto;
+  grid-gap:15px;
+  margin:30px auto;
+  padding:50px;
+  width:70%;
+  line-height:160%;
+  color:var(--black-hex);
+  font-size:15px;
+  font-family:var(--sans);
+  text-align:justify;
+  background:linear-gradient(to bottom right, rgba(var(--mgrgb1),0.3) 0%, rgba(var(--mgrgb2),0.3) 50%, rgba(var(--mgrgb3),0.3) 100%);
+  box-shadow: 0 0 20px 5px var(--white3-hex);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+via-thread9.alternate {
+  position:relative;
+  display: grid;
+  grid-template-areas: 
+    "image"
+    "writing"
+    "tag";
+  grid-template-rows: auto auto auto;
+  grid-gap:15px;
+}
+
+via-thread9 img {
+  grid-area: image;
+  width:80px;
+  height:80px;
+  border-radius:10px;
+}
+
+via-thread9 .writing {
+  position:relative;
+  grid-area: writing;
+  margin-top:50px;
+  padding:30px;
+  background:var(--white-hex);
+  border-radius:10px;
+  z-index:2;
+}
+
+via-thread9 tag {
+  grid-area: tag;
+  justify-self: left;
+  align-items: center;
+  padding:5px 15px;
+  background:var(--white-hex);
+  border-radius:5px;
+}
+
+via-thread9 tag a {
+  font:800 15px var(--sans);
+  text-transform: uppercase;
+  color:rgb(var(--mgrgb1))!important;
+}
+
+via-thread9 .writing b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+via-thread9 .writing i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-thread9 .writing u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-thread9 .writing a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
