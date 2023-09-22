@@ -2555,7 +2555,7 @@ via-thread9 {
   font-size:15px;
   font-family:var(--sans);
   text-align:justify;
-  background:linear-gradient(to bottom right, rgba(var(--mgrgb1),0.3) 0%, rgba(var(--mgrgb2),0.3) 50%, rgba(var(--mgrgb3),0.3) 100%);
+  background:linear-gradient(to bottom right, rgba(var(--mgrgb1),0.1) 0%, rgba(var(--mgrgb2),0.1) 50%, rgba(var(--mgrgb3),0.1) 100%);
   box-shadow: 0 0 20px 5px var(--white3-hex);
   border-radius:10px;
   overflow:hidden;
