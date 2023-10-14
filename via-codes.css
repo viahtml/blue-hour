@@ -2640,7 +2640,7 @@ via-comm4 {
   background: var(--white-hex); background-image: radial-gradient(at 71.0% 2.0%, rgb(var(--mgrgb1),0.3) 0px, transparent 50%),radial-gradient(at 25.8% 81.0%,rgb(var(--mgrgb2),0.3) 0px, transparent 50%),radial-gradient(at 77.4% 74.2%, rgb(var(--mgrgb3),0.3) 0px, transparent 50%);
   color:var(--black-hex);
   border-radius:25px;
-  font: 13px var(--sans);
+  font: 14px var(--sans);
   text-align:justify;
   box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
   overflow:hidden;
