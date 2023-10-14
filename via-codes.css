@@ -2685,7 +2685,7 @@ via-comm4 via-comm4-contact y {
 via-comm4 .msgs {
   position:relative;
   display:block;
-  padding:25px;
+  padding:35px;
 }
 
 via-comm4 .msgs p {
@@ -2700,7 +2700,7 @@ via-comm4 .msgs p {
 via-comm4 .call {
   position:relative;
   display:block;
-  padding:25px;
+  padding:35px;
 }
 
 via-comm4 .call p {
