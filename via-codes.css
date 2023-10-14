@@ -2625,3 +2625,137 @@ via-thread9 .writing a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+/**********
+COMM4
+**********/
+
+
+via-comm4 {
+  position:relative;
+  display:grid;
+  grid-template-rows: 50px auto auto 70px;
+  margin:30px auto;
+  width:400px;
+  background: var(--white-hex); background-image: radial-gradient(at 71.0% 2.0%, rgb(var(--mgrgb1),0.3) 0px, transparent 50%),radial-gradient(at 25.8% 81.0%,rgb(var(--mgrgb2),0.3) 0px, transparent 50%),radial-gradient(at 77.4% 74.2%, rgb(var(--mgrgb3),0.3) 0px, transparent 50%);
+  color:var(--black-hex);
+  border-radius:25px;
+  font: 13px var(--sans);
+  text-align:justify;
+  box-shadow: 0 0 10px 0 rgba(var(--gray),0.75);
+  overflow:hidden;
+}
+
+via-comm4 via-comm4-top {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:25px;
+}
+
+via-comm4 via-comm4-top span i,
+via-comm4 via-comm4-top span b {
+  margin:3px;
+  color:rgb(var(--mgrgb2));
+}
+
+via-comm4 via-comm4-contact {
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:40px 25px;
+  border-bottom:1px solid var(--white-hex);
+}
+
+via-comm4 via-comm4-contact x {
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+  color:rgb(var(--mgrgb3));
+}
+
+via-comm4 via-comm4-contact y {
+  font:400 35px var(--sans);
+  text-transform:lowercase;
+}
+
+via-comm4 .msgs {
+  position:relative;
+  display:block;
+  padding:25px;
+}
+
+via-comm4 .msgs p {
+  margin:3px;
+  float:left;
+  clear:both;
+  background:var(--white-hex);
+  padding:15px;
+  border-radius:10px;
+}
+
+via-comm4 .call {
+  position:relative;
+  display:block;
+  padding:25px;
+}
+
+via-comm4 .call p {
+  background:var(--white-hex);
+  padding:15px;
+  border-radius:10px;
+}
+
+via-comm4 overflow {
+  display:block;
+  max-height:350px;
+  overflow:auto;
+}
+
+via-comm4 via-comm4-bottom {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  padding:25px;
+}
+
+via-comm4 via-comm4-bottom type {
+  padding:10px 15px;
+  width:75%;
+  border-radius:20px;
+  background:var(--white-hex);
+  font:600 10px var(--sans);
+  text-transform:uppercase;
+}
+
+via-comm4 via-comm4-bottom i {
+  color:rgb(var(--mgrgb1));
+}
+
+via-comm4 b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+via-comm4 i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-comm4 u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-comm4 a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
