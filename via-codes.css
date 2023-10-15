@@ -2652,7 +2652,7 @@ via-comm4 via-comm4-top {
   flex-flow:row;
   justify-content: space-between;
   align-items: center;
-  padding:25px;
+  padding:35px;
 }
 
 via-comm4 via-comm4-top span i,
@@ -2667,7 +2667,7 @@ via-comm4 via-comm4-contact {
   flex-flow:column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding:40px 25px;
+  padding:40px 35px;
   border-bottom:1px solid var(--white-hex);
 }
 
