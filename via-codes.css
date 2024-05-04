@@ -2937,6 +2937,24 @@ via-comm5 .msgs {
   background:var(--lightGradientTR);
 }
 
+via-comm5 .msgs note {
+  position:relative;
+  display:block;
+  text-align:center;
+  top:10px;
+  margin-bottom:20px;
+  bottom:10px;
+  clear:both;
+  font:800 13px var(--sans);
+  text-transform:uppercase;
+}
+
+via-comm5 .msgs overflow {
+  display:block;
+  max-height:250px;
+  overflow:auto;
+}
+
 via-comm5 .msgs p {
   float:left;
   clear:both;
