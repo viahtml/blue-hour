@@ -2759,3 +2759,247 @@ via-comm4 a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+
+/***********
+THREAD 10
+***********/
+
+via-thread10 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "thread-top"
+    "writing"
+    "thread-bottom";
+  grid-template-rows: auto auto auto;
+  width:450px;
+  min-height:100px;
+  margin:30px auto;
+  background:var(--white-hex);
+  border:2px solid var(--black-hex);
+  box-shadow: 5px 5px rgb(var(--mgrgb3),1);
+}
+
+via-thread10 thread-top {
+  position:relative;
+  display:grid;
+  grid-template-columns: 80px auto;
+  border-bottom:2px solid var(--black-hex);
+}
+
+via-thread10 thread-top img {
+  width:80px;
+  height:80px;
+  border-right:2px solid var(--black-hex);
+}
+
+via-thread10 thread-top lyr {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  font:800 15px var(--sans);
+  padding:20px;
+}
+
+via-thread10 thread-top lyr span {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.8) 0%, rgba(var(--mgrgb2),0.8) 15%, rgba(var(--mgrgb3),0.8) 50%, rgba(var(--mgrgb2),0.8) 85%, rgba(var(--mgrgb1),0.8) 100%);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+}
+
+via-thread10 .writing {
+  position:relative;
+  display:block;
+  padding:30px;
+  font:500 15px var(--sans);
+  text-align:justify;
+  background:var(--lightGradientTR);
+}
+
+via-thread10 thread-bottom {
+  position:relative;
+  display:grid;
+  grid-template-columns: auto 30px;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  border-top: 2px solid var(--black-hex);
+}
+
+via-thread10 thread-bottom tag {
+  font: 800 15px var(--sans);
+  text-transform:uppercase;
+  letter-spacing:1.15px;
+  color:rgb(var(--mgrgb2));
+  text-decoration:none;
+}
+
+via-thread10 thread-bottom grp-icon {
+  position: relative; 
+  display: flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  width:30px;
+  height:30px;
+  box-sizing: border-box;
+  background: var(--icon); 
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+via-thread10 b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+
+via-thread10 i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-thread10 u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-thread10 a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
+
+/***********
+COMM 5
+***********/
+
+via-comm5 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "thread-top"
+    "writing"
+    "thread-bottom";
+  grid-template-rows: auto auto auto;
+  width:450px;
+  min-height:100px;
+  margin:30px auto;
+  background:var(--white-hex);
+  border:2px solid var(--black-hex);
+  box-shadow: 5px 5px rgb(var(--mgrgb3),1);
+}
+
+via-comm5 thread-top {
+  position:relative;
+  display:grid;
+  grid-template-columns: 80px auto;
+  border-bottom:2px solid var(--black-hex);
+}
+
+via-comm5 thread-top img {
+  width:80px;
+  height:80px;
+  border-right:2px solid var(--black-hex);
+}
+
+via-comm5 thread-top lyr {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  font:800 15px var(--sans);
+  padding:20px;
+}
+
+via-comm5 thread-top lyr span {
+  background:linear-gradient(to left, rgba(var(--mgrgb1),0.8) 0%, rgba(var(--mgrgb2),0.8) 15%, rgba(var(--mgrgb3),0.8) 50%, rgba(var(--mgrgb2),0.8) 85%, rgba(var(--mgrgb1),0.8) 100%);
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  background-position: left 1rem;
+}
+
+via-comm5 .msgs {
+  position:relative;
+  display:block;
+  padding:30px;
+  font:500 15px var(--sans);
+  text-align:justify;
+  background:var(--lightGradientTR);
+}
+
+via-comm5 .msgs p {
+  float:left;
+  clear:both;
+  background:var(--white-hex);
+  margin:5px;
+  padding:20px;
+  border-radius:0 20px 20px 20px;
+
+}
+
+via-comm5 thread-bottom {
+  position:relative;
+  display:grid;
+  grid-template-columns: auto 30px;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  border-top: 2px solid var(--black-hex);
+}
+
+via-comm5 thread-bottom tag {
+  font: 800 15px var(--sans);
+  text-transform:uppercase;
+  letter-spacing:1.15px;
+  color:rgb(var(--mgrgb2));
+  text-decoration:none;
+}
+
+via-comm5 thread-bottom grp-icon {
+  position: relative; 
+  display: flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  width:30px;
+  height:30px;
+  box-sizing: border-box;
+  background: var(--icon); 
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+via-comm5 b {
+  background-image: linear-gradient(to left, rgba(var(--mgrgb1),1) 0%, rgba(var(--mgrgb2),1) 15%, rgba(var(--mgrgb3),1) 50%, rgba(var(--mgrgb2),1) 85%, rgba(var(--mgrgb1),1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--white),0);
+}
+via-comm5 i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-comm5 u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-comm5 a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
