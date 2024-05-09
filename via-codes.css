@@ -3021,3 +3021,132 @@ via-comm5 a {
   font:800 11px var(--sans);
   text-transform:uppercase;
 }
+
+
+/***********
+THREAD 11
+***********/
+
+via-thread11 {
+  position:relative;
+  display:grid;
+  grid-template-areas:  
+    "left-border left-border"
+    "wave-top wave-top"
+    "side-bar writing"
+    "wave wave"
+    "right-border right-border";
+  grid-template-rows: auto auto minmax(30px, auto) auto auto;
+  grid-template-columns: 30% auto;
+  width:700px;
+  margin:30px auto;
+  background-image:var(--white-hex);
+  background:var(--lightGradientTR);
+  border-radius:10px;
+  box-shadow: 0 0 20px 0 rgb(var(--gray),1);
+  overflow:hidden;
+}
+
+via-thread11 left-border {
+  grid-area:left-border;
+  display:block;
+  top:0;
+  left:0;
+  height:2px;
+  background:rgb(var(--mgrgb1));
+}
+
+via-thread11 right-border {
+  grid-area:right-border;
+  display:block;
+  top:0;
+  right:0;
+  height:2px;
+  background:rgb(var(--mgrgb3));
+}
+
+via-thread11 .writing {
+  grid-area:writing;
+  position:relative;
+  display:grid;
+  grid-template-rows: auto auto auto;
+  padding:30px;
+}
+
+via-thread11 side-bar {
+  position:relative;
+  padding:50px;
+  display:flex;
+  flex-flow:column;
+  z-index:3;
+}
+
+via-thread11 side-bar img {
+  width:70px;
+  height:70px;
+  border-radius:10px;
+  border:3px solid var(--white-hex);
+}
+
+via-thread11 .writing {
+  position: relative;
+  display:block;
+  text-align:justify;
+  font:500 15px var(--manrope);
+  color:var(--black-hex);
+  margin:30px;
+  z-index:3;
+}
+
+
+via-thread11 .writing b {
+  color:rgba(var(--mgrgb2));
+}
+via-thread11 .writing i {
+  color:rgba(var(--mgrgb3));
+}
+
+via-thread11 .writing u {
+  color:var(--black-hex);
+  text-decoration-color: rgb(var(--mgrgb1));
+  text-decoration-style: dashed;
+}
+
+via-thread11 .writing a {
+  color:rgba(var(--mgrgb2));
+  font-family:var(--sans);
+  font:800 11px var(--sans);
+  text-transform:uppercase;
+}
+
+via-thread11 tag {
+  position: relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  gap:5px;
+  margin-top:10px;
+}
+
+via-thread11 tag i {
+  font-size:20px;
+  color:rgb(var(--mgrgb1));
+}
+
+via-thread11 tag a {
+  position:relative;
+  display:block;
+  font:800 16px var(--manrope);
+  color:rgb(var(--mgrgb1));
+}
+
+via-thread11 .wave {
+  grid-area:wave;
+  margin-bottom:-10px;
+}
+
+via-thread11 .wave-top {
+  grid-area:wave-top;
+  margin-top:-10px;
+}
