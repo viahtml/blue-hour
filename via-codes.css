@@ -3144,7 +3144,7 @@ via-thread11 tag a {
 
 via-thread11 .wave {
   grid-area:wave;
-  margin-bottom:-10px;
+  margin-bottom:0px;
 }
 
 via-thread11 .wave-top {
