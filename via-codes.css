@@ -8,6 +8,7 @@ html {
   --sans: 'Quicksand', sans-serif;
   --display: 'Cherry Bomb One', cursive;
   --mono: 'Space Mono', monospace;
+  --manrope: "Manrope", sans-serif;
 
   /*** COLORS ***/
   --clear: rgba(255, 255, 255, 0);
