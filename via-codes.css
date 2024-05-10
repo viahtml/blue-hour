@@ -3138,8 +3138,8 @@ via-thread11 tag i {
 via-thread11 tag a {
   position:relative;
   display:block;
-  font:800 16px var(--manrope);
-  color:rgb(var(--mgrgb1));
+  font:800 16px var(--manrope)!important;
+  color:rgb(var(--mgrgb1))!important;
 }
 
 via-thread11 .wave {
